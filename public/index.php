@@ -176,7 +176,7 @@ $posts = include '../data/posts.php';
                     <h1 class="text-5xl lg:text-8xl font-bold tracking-tight mb-8 leading-[1.1]">
                         Nossas marcas movem <span class="text-blue-300">para o futuro.</span>
                     </h1>
-                    <p class="text-xl lg:text-2xl text-blue-100 mb-10 max-w-2xl leading-relaxed font-light">
+                    <p class="text-md lg:text-2xl text-blue-100 mb-10 max-w-2xl leading-relaxed font-light">
                         Não somos apenas investidores. Somos uma holding dedicada a elevar o patamar operacional de
                         nossas empresas, construindo valor através da excelência.
                     </p>
@@ -192,8 +192,8 @@ $posts = include '../data/posts.php';
         </div>
 
         <!-- Wave Transition -->
-        <div class="absolute bottom-0 left-0 w-full leading-none z-10">
-            <svg class="relative block w-full h-[50px] text-white fill-current" viewBox="0 0 1200 120"
+        <div class="absolute -bottom-[4px] left-0 w-full leading-none z-10">
+            <svg class="relative block w-full h-[60px] text-white fill-current" viewBox="0 0 1200 120"
                 preserveAspectRatio="none">
                 <path
                     d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C58.47,105.14,124.34,103.29,182.25,89.6,240.16,75.91,280.25,71.1,321.39,56.44Z">
@@ -213,10 +213,10 @@ $posts = include '../data/posts.php';
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-10">
                 <!-- Neoflow -->
-                <div class="group relative bg-white border-2 border-[#F4F7FA] rounded-[50px] p-8 lg:p-12 reveal">
+                <div class="group relative bg-gray-50 border-2 border-[#F4F7FA] rounded-[50px] p-8 lg:p-12">
                     <div class="flex flex-col md:flex-row gap-4 lg:gap-0 items-center relative z-10">
                         <!-- Popping Image -->
-                        <div class="w-full md:w-1/2 lg:w-[45%] -mt-24 md:-mt-32 md:-ml-20 lg:-ml-24 mb-4 md:mb-0">
+                        <div class="w-full md:w-1/2 lg:w-[60%] -mt-24 md:-mt-32 md:-ml-20 lg:-ml-0 mb-4 md:mb-0">
                             <img src="assets/img/ps2-saniflo-hs-fixed_1200x1200.png" alt="Neoflow Pump Product"
                                 class="w-full h-auto drop-shadow-[0_35px_35px_rgba(0,0,0,0.2)] transform scale-110 lg:scale-125">
                         </div>
@@ -241,7 +241,7 @@ $posts = include '../data/posts.php';
                 <div class="group relative bg-navy text-white rounded-[50px] p-8 lg:p-12">
                     <div class="flex flex-col md:flex-row gap-4 lg:gap-0 items-center relative z-10">
                         <!-- Popping Image -->
-                        <div class="w-full md:w-1/2 lg:w-[70%] -mt-24 md:-mt-85 md:-ml-20 lg:-ml-24 mb-4 md:mb-0">
+                        <div class="w-full md:w-1/2 lg:w-[70%] -mt-24 md:-mt-23 md:-ml-20 lg:-ml-24 mb-4 md:mb-0">
                             <img src="assets/img/3d-illustration-cargo-container-isolated-white-background.png"
                                 alt="Delphi Cargo Container"
                                 class="w-full h-auto drop-shadow-[0_35px_35px_rgba(0,0,0,0.4)] transform scale-110 lg:scale-125">
@@ -269,7 +269,7 @@ $posts = include '../data/posts.php';
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
                 <div class="reveal">
-                    <p class="text-3xl md:text-5xl font-black text-[#0047BB] mb-2 tracking-tighter shadow-sm">R$ 500M+
+                    <p class="text-3xl md:text-5xl font-black text-[#0047BB] mb-2 tracking-tighter">R$ 500M+
                     </p>
                     <p class="text-xs font-bold uppercase text-gray-400 tracking-widest">Sob Gestão</p>
                 </div>
@@ -302,7 +302,7 @@ $posts = include '../data/posts.php';
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <?php foreach (array_slice($portfolio, 0, 3) as $key => $item): ?>
                     <div
-                        class="group relative bg-white rounded-[40px] p-10 border-2 border-[#F4F7FA] shadow-sm hover-float transition-all tech-card-hover reveal delay-<?php echo ($key + 1) * 100; ?>">
+                        class="group relative bg-white rounded-[40px] p-10 border-1 border-[#F4F7FA] shadow-sm hover-float transition-all tech-card-hover reveal delay-<?php echo ($key + 1) * 100; ?>">
 
                         <!-- Tech Grid Background (Aparece no hover) -->
                         <div
