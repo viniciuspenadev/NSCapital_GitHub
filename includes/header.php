@@ -24,36 +24,38 @@ $page_description = $page_description ?? "Holding focada em gestão, crescimento
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS (Build) -->
-    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-primary: #0047BB;
+            --color-primary-dark: #00358E;
+            --color-primary-light: #1A6BFF;
+            --color-navy: #0A0F1D;
+            --color-navy-light: #161F33;
+            --color-navy-dark: #050810;
+            --color-surface-dark: #F4F7FA;
+            --color-surface-light: #FFFFFF;
+        }
 
-    <!-- Tailwind CSS (CDN Fallback - Remove in production after build) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        primary: {
-                            DEFAULT: '#0047BB', // Azul Asaas Style
-                            dark: '#00358E',
-                            light: '#1A6BFF',
-                        },
-                        navy: {
-                            DEFAULT: '#0A0F1D',
-                            light: '#161F33',
-                            dark: '#050810',
-                        },
-                        surface: {
-                            dark: '#F4F7FA', // Background claro bancário
-                            light: '#FFFFFF',
-                        }
-                    }
-                }
+        @layer components {
+            .btn-primary {
+                @apply px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-dark transition-all duration-300 active:scale-95 shadow-lg shadow-primary/20;
+            }
+
+            .btn-outline {
+                @apply px-8 py-4 bg-transparent border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all duration-300;
+            }
+
+            .card {
+                @apply bg-white dark:bg-navy-light p-8 rounded-[32px] border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl transition-all duration-500;
+            }
+
+            .glass {
+                @apply backdrop-blur-md bg-white/10 border border-white/20;
             }
         }
-    </script>
+    </style>
 
     <style>
         body {
