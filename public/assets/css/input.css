@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+        @apply px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-dark transition-all duration-300 active:scale-95 shadow-lg shadow-primary/20;
+    }
+
+    .btn-outline {
+        @apply px-8 py-4 bg-transparent border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all duration-300;
+    }
+
+    .card {
+        @apply bg-white dark:bg-navy-light p-8 rounded-[32px] border border-gray-100 dark:border-white/5 shadow-sm hover:shadow-xl transition-all duration-500;
+    }
+
+    .glass {
+        @apply backdrop-blur-md bg-white/10 border border-white/20;
+    }
+}
+
+/* Motivo Visual: Capital Flow Lines */
+.flow-lines {
+    background-image: radial-gradient(circle at 2px 2px, rgba(212, 175, 55, 0.05) 1px, transparent 0);
+    background-size: 24px 24px;
+}
